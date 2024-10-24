@@ -4,5 +4,8 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "https://theredhorsellc.github.io/MockApp/"
+  base: "https://theredhorsellc.github.io/MockApp/",
+  build:{
+    outDir: "dist",
+  }
 })
